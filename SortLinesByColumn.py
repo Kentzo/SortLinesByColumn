@@ -43,9 +43,9 @@ class SortLinesByColumnCommand(sublime_plugin.TextCommand):
 
             # Sort lines by the `column` item of row. If length of that row is less than `column`, consider key value as ''.
             if case_sensitive:
-                sorted_lines = sorted(lines, key=lambda x: x[1][column] if len(x) > column else '')
+                sorted_lines = sorted(lines, key=lambda x: x[1][column] if len(x[1]) > column else '')
             else:
-                sorted_lines = sorted(lines, key=lambda x: x[1][column].lower() if len(x) > column else '')
+                sorted_lines = sorted(lines, key=lambda x: x[1][column].lower() if len(x[1]) > column else '')
             # Turn our sorted lines back to string
             sorted_lines_str = ''.join(line[0] for line in sorted_lines)
 
