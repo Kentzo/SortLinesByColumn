@@ -1,0 +1,19 @@
+[
+    {
+        "id": "edit",
+        "children":
+        [
+            { "id": "end" },
+            {
+                "caption": "Sort Lines By Column",
+                "command": "sort_lines_by_column",
+                "args": {"case_sensitive": false}
+            },
+            {
+                "caption": "Sort Lines By Column (Case Sensitive)",
+                "command": "sort_lines_by_column",
+                "args": {"case_sensitive": true}
+            }
+        ]
+    }
+]

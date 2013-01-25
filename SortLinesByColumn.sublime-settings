@@ -1,0 +1,9 @@
+/*
+    SortLinesByColumn default settings
+*/
+{
+    /*
+        Rexexp passed to re.split in order to split lines into columns.
+    */
+    "sortlinesbycolumn_split_regexp": "\\W+"
+}
