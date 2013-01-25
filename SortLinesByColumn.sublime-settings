@@ -5,5 +5,9 @@
     /*
         Rexexp passed to re.split in order to split lines into columns.
     */
-    "sortlinesbycolumn_split_regexp": "\\W+"
+    "sortlinesbycolumn_split_regexp": "\\W+",
+    /*
+        Determines whether line is stripped before splitting.
+    */
+    "sortlinesbycolumn_should_strip": true
 }
